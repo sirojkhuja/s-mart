@@ -44,7 +44,7 @@ if (isset($_SESSION['gcCart'])) {
             <div class="row">
                 <div class="col-md-4 clearfix">
                     <div class="logo pull-left">
-                        <a href="<?php echo web_root ?>"><img width="120" src="images/home/logo.png" alt=""/></a>
+                        <a href="<?php echo web_root ?>"><img width="60" src="images/home/logo.png" alt=""/></a>
                     </div>
                 </div>
                 <div class="col-md-8 clearfix">
@@ -74,7 +74,7 @@ if (isset($_SESSION['gcCart'])) {
                 <div class="col-sm-12">
                     <form action="<?php echo web_root ?>index.php?q=product" method="POST">
                         <div class="search_box">
-                            <input type="text" name="search" placeholder="Search"/>
+                            <input type="text" name="search" placeholder="Search for products"/>
                             <!-- <img src="../images/home/searchicon.png" alt=""> -->
                         </div>
                     </form>

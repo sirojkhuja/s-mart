@@ -1,13 +1,12 @@
 <section>
     <div class="container">
         <div class="row">
-            <div class="col-sm-3">
-                <?php include 'sidebar.php'; ?>
-            </div><!--/category-productsr-->
-
             <div class="products-block">
                 <div class="features_items"><!--features_items-->
-                    <p class="title text-center">Products</p>
+                    <div class="fancy">
+                        <span class="label-title text-center ">Products</span>
+
+                    </div>
                     <div class="row">
 
                     <?php
@@ -31,7 +30,7 @@
 
                         foreach ($cur as $result) {
                             ?>
-                            <form method="POST" class="col-6 col-md-3 col-sm-2" action="cart/controller.php?action=add">
+                            <form method="POST" class="col-6 col-md-3 col-sm-2 g-1" action="cart/controller.php?action=add">
                                 <input type="hidden" name="PROPRICE" value="<?php echo $result->PROPRICE; ?>">
                                 <input type="hidden" id="PROQTY" name="PROQTY" value="<?php echo $result->PROQTY; ?>">
 
@@ -77,6 +76,10 @@
 
                 </div><!--features_items-->
             </div>
+
+            <div class="sidebar-block">
+                <?php include 'sidebar.php'; ?>
+            </div><!--/category-productsr-->
         </div>
     </div>
 </section>

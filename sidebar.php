@@ -1,5 +1,7 @@
-<div class="left-sidebar">
-    <h2>Category</h2>
+<div class="text-center">
+    <div class="fancy"><span class="label-title text-center">
+        Category
+    </span></div>
     <div class="panel-group category-products" id="accordian"><!--category-productsr-->
 
         <?php
@@ -21,5 +23,3 @@
     </div> -->
 
 </div>
-
- 
