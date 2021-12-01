@@ -480,7 +480,7 @@ ul.sub-menu {
 }
 
 .footer-widget {
-  /* padding-bottom: 25px; */
+  padding-top: 25px;
   background: #dadaf1;
   overflow: hidden;
   z-index: 100;
@@ -766,6 +766,16 @@ h2.title:before {
   padding-top: 15px;
 }
 
+.nav.nav-pills.nav-stacked {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.nav.nav-pills.nav-stacked a {
+  text-decoration: none;
+}
+
 .brands-name .nav-stacked li a {
   background-color: #ffffff;
   color: #696763;
@@ -839,23 +849,15 @@ h2.title {
   position: relative;
 }
 
+.product-item {
+  width: 30vw;
+}
+
 .product-image-wrapper {
-  /* border: 1px solid #f7f7f5;
-  overflow: hidden;
-  margin-bottom: 30px; */
-  /* width: 20rem; */
-
-  /* height: 325px; */
-
   margin: 10% 5%;
-
-  /* padding:0; */
-
   border-radius: 2em;
-
   box-shadow: 7.4px 7.4px 14.8px 1.5px rgba(115, 98, 135, 0.4),
     -7.4px -7.4px 14.8px 1.5px rgba(249, 246, 246, 0.9);
-
   background-color: #eae9f7;
   overflow: hidden;
 }
@@ -867,8 +869,10 @@ h2.title {
 .product-image-wrapper .product-name {
   /* font-weight: 100; */
   color: #6a2d2d;
-  font-size: 2.5em;
+  font-size: 3.6vh;
   font-weight: bold;
+  padding: 0;
+  margin: 0 0 0 2vh;
 }
 
 .price-amount {
@@ -880,17 +884,19 @@ h2.title {
   display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 1em;
+  margin-bottom: 0.5vh;
 }
 
 .product-desc {
-  font-size: 1.5em;
+  font-size: 2.2vh;
+  padding: 0;
+  margin: 0 0 1.5vh 0;
 }
 
 .product-price,
 .product-amount {
   color: #8c01cd;
-  font-size: 24px;
+  font-size: 2.5vh;
   font-weight: 600;
   letter-spacing: 0.05em;
 }
@@ -900,7 +906,7 @@ h2.title {
 }
 
 .currency {
-  height: 1.7em;
+  height: 3vh;
   margin-right: 0.4em;
   margin-top: 0.2em;
 }
@@ -910,7 +916,7 @@ h2.title {
 }
 
 .align-left {
-  margin-left: 7.5%;
+  margin-left: 2vh;
 }
 
 .single-products {
@@ -936,7 +942,7 @@ h2.title {
   color: #696763;
 } */
 
-.productinfo img {
+.productinfo .product-image {
   width: 100%;
 }
 
@@ -1016,8 +1022,9 @@ h2.title {
   border: 0 none;
   border-radius: 0;
   color: #696763;
-  font-size: 15px;
-  margin-bottom: 25px;
+  font-size: 1.9vh;
+  margin-bottom: 2vh;
+  padding: 0.5vh;
 }
 
 .add-to-cart:hover {
@@ -2498,4 +2505,8 @@ textarea {
 
 .footer-widget .container .row {
   background-color: #dadaf1;
+}
+
+.col-sm-6 {
+  width: 50vw;
 }

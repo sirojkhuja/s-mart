@@ -14,6 +14,8 @@
             <div class="products-block">
                 <div class="features_items"><!--features_items-->
                     <p class="title text-center">Products</p>
+                    <div class="row">
+
                     <?php
                     if (isset($_POST['search'])) {
                         $query = "SELECT * FROM `tblpromopro` pr , `tblproduct` p , `tblcategory` c
@@ -26,8 +28,6 @@
                         $query = "SELECT * FROM `tblpromopro` pr , `tblproduct` p , `tblcategory` c
                           WHERE pr.`PROID`=p.`PROID` AND  p.`CATEGID` = c.`CATEGID`  AND PROQTY>0 ";
                     }
-
-
                     $mydb->setQuery($query);
                     $res = $mydb->executeQuery();
                     $maxrow = $mydb->num_rows($res);
@@ -36,18 +36,16 @@
                         $cur = $mydb->loadResultList();
 
                         foreach ($cur as $result) {
-
                             ?>
-                            <form method="POST" action="cart/controller.php?action=add">
+                            <form method="POST" class="col-6 col-md-3 col-sm-2" action="cart/controller.php?action=add">
                                 <input type="hidden" name="PROPRICE" value="<?php echo $result->PROPRICE; ?>">
                                 <input type="hidden" id="PROQTY" name="PROQTY" value="<?php echo $result->PROQTY; ?>">
 
                                 <input type="hidden" name="PROID" value="<?php echo $result->PROID; ?>">
-                                <div class="col-sm-4">
                                     <div class="product-image-wrapper">
                                         <div class="single-products">
                                             <div class="productinfo">
-                                                <img src="<?php echo web_root . 'admin/products/' . $result->IMAGES; ?>"
+                                                <img class="product-image" src="<?php echo web_root . 'admin/products/' . $result->IMAGES; ?>"
                                                      alt=""/>
                                                 <p class="product-name align-left"><?php echo $result->PRODNAME; ?></p>
                                                 <p class="product-desc align-left"><?php echo $result->PRODESC; ?></p>
@@ -73,35 +71,16 @@
                                             </div>
                                                
                                         </div>
-                                        <!-- <div class="choose">
-                                            <ul class="nav nav-pills nav-justified">
-                                                <li>
-                                                    <?php
-                                                    if (isset($_SESSION['CUSID'])) {
-
-                                                        echo ' <a href="' . web_root . 'customer/controller.php?action=addwish&proid=' . $result->PROID . '" title="Add to wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a></a>
-                            ';
-
-                                                    } else {
-                                                        echo '<a href="#" title="Add to wishlist" class="proid"  data-target="#smyModal" data-toggle="modal" data-id="' . $result->PROID . '"><i class="fa fa-plus-square"></i>Add to wishlist</a></a>
-                            ';
-                                                    }
-                                                    ?>
-
-                                                </li>
-                                            </ul>
-                                        </div> -->
                                     </div>
-                                </div>
                             </form>
                         <?php }
-
-
                     } else {
 
                         echo '<p class="text-center text-danger">No Products Available</p>';
 
                     } ?>
+                    </div>
+
                 </div><!--features_items-->
             </div>
         </div>

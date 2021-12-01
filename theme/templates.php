@@ -151,30 +151,11 @@ require_once $content;
 
 
 <footer id="footer"><!--Footer-->
-    <!-- <div class="footer-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-2">
-                    <div class="companyinfo">
-                        <h2><span>e</span>-shopper</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor</p>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="address">
-                        <img src="images/home/map.png" alt=""/>
-                        <p>505 S Atlantic Ave Virginia Beach, VA(Virginia)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
     <div class="footer-widget">
         <div class="container">
             <!-- <p>You can modify this section using your own personal information</p> -->
             <div class="row">
-                <div class="col-sm-3">
+                <div class="col-6">
                     <div class="single-widget">
                         <h2>Service</h2>
                         <ul class="nav nav-pills nav-stacked">
@@ -186,7 +167,7 @@ require_once $content;
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-6">
                     <div class="single-widget">
                         <h2>Quick Shop</h2>
                         <ul class="nav nav-pills nav-stacked">
@@ -200,7 +181,7 @@ require_once $content;
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-6">
                     <div class="single-widget">
                         <h2>Policies</h2>
                         <ul class="nav nav-pills nav-stacked">
@@ -212,7 +193,7 @@ require_once $content;
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-6">
                     <div class="single-widget">
                         <h2>About Shopper</h2>
                         <ul class="nav nav-pills nav-stacked">
