@@ -264,6 +264,7 @@ a#scrollUp i {
 
 .search_box {
   position: relative;
+  padding: 0 1vh;
 }
 
 .search_box input {
@@ -834,6 +835,7 @@ h2.title:before {
 
 .features_items {
   overflow: hidden;
+  padding: 2vh;
 }
 
 h2.title {
@@ -852,7 +854,7 @@ h2.title {
 
 .product-image-wrapper {
   margin: 10% 5%;
-  border-radius: 2em;
+  border-radius: 3vh;
   box-shadow: 7.4px 7.4px 14.8px 1.5px rgba(115, 98, 135, 0.4),
     -7.4px -7.4px 14.8px 1.5px rgba(249, 246, 246, 0.9);
   background-color: #eae9f7;
