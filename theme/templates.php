@@ -74,7 +74,7 @@ if (isset($_SESSION['gcCart'])) {
                 <div class="col-sm-12">
                     <form action="<?php echo web_root ?>index.php?q=product" method="POST">
                         <div class="search_box">
-                            <input type="text" name="search" placeholder="Search for products"/>
+                            <input type="text" name="search" placeholder="Search"/>
                             <!-- <img src="../images/home/searchicon.png" alt=""> -->
                         </div>
                     </form>

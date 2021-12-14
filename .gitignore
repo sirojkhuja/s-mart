@@ -1,0 +1,4 @@
+.idea/
+.prettierrc
+db_ecommerce.sql
+include/config.php
